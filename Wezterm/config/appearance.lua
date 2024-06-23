@@ -3,17 +3,17 @@ local gpu_adapters = require('utils.gpu_adapter')
 local colors = require('colors.custom')
 
 return {
-    animation_fps = 60,
-    max_fps = 60,
-    front_end = 'WebGpu',
-    webgpu_power_preference = 'HighPerformance',
-    webgpu_preferred_adapter = gpu_adapters:pick(),
+    animation_fps = 60,                                                -- 最大动画帧率
+    max_fps = 60,                                                      -- 最大显示帧率
+    front_end = 'WebGpu',                                              -- 渲染前端
+    webgpu_power_preference = 'HighPerformance',                       -- 配置了渲染前端为 `WebGpu` 时的电源选项
+    webgpu_preferred_adapter = gpu_adapters:pick(),                    -- 
 
     -- color scheme
-    colors = colors,
+    colors = colors,                                                   -- 指定颜色调色的 scheme 方案
 
     -- background
-    background = {
+    background = {                                                     -- 背景
         {
             source = { File = wezterm.GLOBAL.background },
         },
@@ -29,7 +29,7 @@ return {
     --         SCROLLBAR          --
     --------------------------------
 
-    enable_scroll_bar = true,
+    enable_scroll_bar = true,                                          -- 开启滚动条
 
     --------------------------------
     --            TAB             --
