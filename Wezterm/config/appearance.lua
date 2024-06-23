@@ -47,8 +47,9 @@ return {
     --           WINDOWS          --
     --------------------------------
 
-    window_close_confirmation = 'NeverPrompt',
-    window_padding = {
+    window_close_confirmation = 'NeverPrompt',                         -- 取消窗口关闭提示
+    window_decorations = "RESIZE",                                     -- 取消窗口标题栏
+    window_padding = {                                                 -- 窗口大小填充
         left = 5,
         right = 10,
         top = 12,
