@@ -29,22 +29,22 @@ return {
     --         SCROLLBAR          --
     --------------------------------
 
-    enable_scroll_bar = true,                                          -- 开启滚动条
+    enable_scroll_bar = true,                                          -- 是否开启滚动条
 
     --------------------------------
     --            TAB             --
     --------------------------------
 
-    enable_tab_bar = true,
-    use_fancy_tab_bar = true,
-    tab_bar_at_bottom = false,
-    show_tab_index_in_tab_bar = false,
-    hide_tab_bar_if_only_one_tab = false,
-    switch_to_last_active_tab_when_closing_tab = true,
-    tab_max_width = 25,
+    enable_tab_bar = true,                                             -- 是否启动标签栏
+    use_fancy_tab_bar = true,                                          -- 是否使用 fancy 标签栏
+    tab_bar_at_bottom = false,                                         -- 是否将标签栏放置在下方
+    show_tab_index_in_tab_bar = false,                                 -- 是否展示 tab 的序号
+    hide_tab_bar_if_only_one_tab = true,                               -- 是否当仅有一个 tab 式隐藏标题栏
+    switch_to_last_active_tab_when_closing_tab = true,                 -- 是否切换至最后的一个 tab 当关闭该 tab 时
+    tab_max_width = 25,                                                -- tab 的最大宽度
 
     --------------------------------
-    --           WINDOWS          --
+    --           WINDOW           --
     --------------------------------
 
     window_close_confirmation = 'NeverPrompt',                         -- 取消窗口关闭提示
@@ -62,4 +62,10 @@ return {
         saturation = 0.9,
         brightness = 0.65,
     },
+    
+    --------------------------------
+    --           MAC OS           --
+    --------------------------------
+    native_macos_fullscreen_mode = true,                               -- 使用 MacOS 的全屏模式
+
 }
